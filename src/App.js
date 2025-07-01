@@ -1,28 +1,31 @@
 import React from 'react';
 import TreeCanvas from './components/TreeCanvas';
 import Contador from './components/Contador';
+import Notification from './components/Notifications';
 
 function App() {
+  const color = colorBackground();
   return (
     <div
       style={{
-        background: 'linear-gradient(to bottom, #000000, #8000FF)',
+        background: `linear-gradient(to bottom, ${color}, #000000)`,
         minHeight: '100vh',
         margin: 0,
         padding: '1rem',
-        display: 'flex',
+        display: 'flex', 
         flexDirection: 'column',
         alignItems: 'center',
+        justifyContent: 'center',
         fontFamily: 'Arial, sans-serif',
         boxSizing: 'border-box',
       }}
     >
+      <Notification/>
       <div style={{ width: '100%', maxWidth: 1000 }}>
         <TreeCanvas />
         <div
           style={{
             width: '100%',
-            borderTop: '1px solid #000',
             marginTop: '1.5rem',
             paddingTop: '1rem',
             textAlign: 'center',
@@ -36,6 +39,23 @@ function App() {
       </div>
     </div>
   );
+}
+
+function colorBackground() {
+  const ahora = new Date();
+  const hora = ahora.getHours();
+
+  if (hora >= 6) {
+    return '#0049b9';
+  }else if (hora >= 12) {
+    return '#00b2ff';
+  }else if (hora >= 18) {
+    return '#e36b00';
+  }else if (hora >= 23) {
+    return '#000000';
+  }else{
+    return '#0068ff';
+  }
 }
 
 export default App;

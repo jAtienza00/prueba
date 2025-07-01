@@ -157,8 +157,6 @@ const TreeCanvas = () => {
         height: 'auto',
         aspectRatio: '1200 / 800',
         borderRadius: '8px',
-        boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
-        background: 'linear-gradient(to bottom, #000000, #8000FF)', // fondo degradado
         display: 'block',
       }}
     />
