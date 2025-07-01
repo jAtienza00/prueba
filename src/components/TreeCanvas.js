@@ -136,7 +136,7 @@ const TreeCanvas = () => {
     const intervalId = setInterval(() => {
       const startX = canvas.width / 2 + (Math.random() * 100 - 50);
       const startY = canvas.height * 0.2 + Math.random() * 50 + Math.random() * 80;
-      const scale = Math.random() * 0.4 + 0.6;
+      const scale = Math.min(canvas.width, canvas.height) / 300 * (Math.random() * 0.6 + 0.3);
       fallingHearts.push(new FallingHeart(startX, startY, scale));
     }, 2000);
 

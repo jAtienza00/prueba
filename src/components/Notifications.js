@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {Gatos, Frases} from '../services/Gestor';
 
 export default function Notification() {
   const [gato, setGato] = useState(false);
@@ -13,7 +14,7 @@ export default function Notification() {
         const imagen = await Gatos();
         setNoti(imagen);
       } else {
-        const mensaje = await Mensaje();
+        const mensaje = await Frases();
         setNoti(mensaje);
       }
     };
@@ -38,26 +39,18 @@ export default function Notification() {
   }, []);
 if (aparecer) {
     return (
-      <div style={{
-        position: 'fixed',
+      <div className='bg-white/75 opacity-100 shadow-black shadow-xl rounded-md flex justify-center fixed items-center' style={{
         top: 10,
         left: -5,
-        backgroundColor: 'white',
         width: '40%',
         maxWidth: '1000px',
         zIndex: 1000,
-        border: '1px solid #ccc',
-        borderRadius: '5px',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
   
       }}>
         {gato ? (
-          noti && <img src={noti} alt='gato' style={{ width: '50%', height: '50%' }}/>
+          noti && <img src={noti} alt='gato' style={{ width: '50%', height: '50%' }} className='opcity-100'/>
         ) : (
-          <p>{noti}</p>
+          <p className='text-center font-Math.min(canvas.width, canvas.height) / 300 p-3'>{noti}</p>
         )}
       </div>
     );
@@ -67,22 +60,3 @@ if (aparecer) {
 }
 }
 
-async function Gatos() {
-  try {
-    const response = await fetch('https://api.thecatapi.com/v1/images/search',
-        {Headers:{
-            'x-api-key': 'live_IyHesXBT7AMcIiyuqeEbPNvXGAWrDQ5A7fDMBvEoe0OswSducWZJFBrvZ9KuHk1U',
-            'Content-Type': 'application/json'
-        }}
-    );
-    const data = await response.json();
-    return data[0].url;
-  } catch (error) {
-    console.error(error);
-    return null;
-  }
-}
-
-async function Mensaje() {
-  return "Hola, soy un mensaje de prueba";
-}

@@ -2,6 +2,7 @@ import React from 'react';
 import TreeCanvas from './components/TreeCanvas';
 import Contador from './components/Contador';
 import Notification from './components/Notifications';
+import Imagenes from './components/Imagenes';
 
 function App() {
   const color = colorBackground();
@@ -11,6 +12,7 @@ function App() {
         background: `linear-gradient(to bottom, ${color}, #000000)`,
         minHeight: '100vh',
         margin: 0,
+        width: '100%',
         padding: '1rem',
         display: 'flex', 
         flexDirection: 'column',
@@ -33,8 +35,9 @@ function App() {
           }}
         >
           <p style={{ fontSize: 'clamp(1rem, 4vw, 1.5rem)' }}>
-            Te amo desde hace <Contador />
+            Avril nos amamos desde hace <Contador />
           </p>
+          <Imagenes />
         </div>
       </div>
     </div>
@@ -45,16 +48,16 @@ function colorBackground() {
   const ahora = new Date();
   const hora = ahora.getHours();
 
-  if (hora >= 6) {
-    return '#0049b9';
-  }else if (hora >= 12) {
-    return '#00b2ff';
+  if (hora >= 23) {
+    return '#000000';
   }else if (hora >= 18) {
     return '#e36b00';
-  }else if (hora >= 23) {
+  }else if (hora >= 12) {
+    return '#00b2ff';
+  }else if (hora >= 6) {
+    return '#0049b9';
+  } else{
     return '#000000';
-  }else{
-    return '#0068ff';
   }
 }
 
