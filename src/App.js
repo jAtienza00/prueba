@@ -39,9 +39,7 @@ function App() {
             Avril nos amamos desde hace <Contador />
           </p>
           <Imagenes />
-              <div style={{marginTop: '2rem'}}>
                   <HeartMessage/>
-              </div>
         </div>
       </div>
     </div>
