@@ -1,83 +1,71 @@
-.heart-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #111;
-  font-family: 'Georgia', serif;
-  text-align: center;
-  padding: 2rem;
-}
-
-.heart-button {
-  background: white;
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 10px;
+.heart-open-button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
   cursor: pointer;
-  box-shadow: 0 0 10px #fff;
-  transition: transform 0.3s ease;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
 }
 
-.heart-button:hover {
+.heart-open-button:hover {
   transform: scale(1.05);
 }
 
-.heart-shape {
-  position: relative;
-  width: 300px;
-  height: 270px;
-  background: black;
-  transform: rotate(-45deg);
-  margin: 2rem auto;
-  animation: fadeIn 1s ease-in-out;
-}
-
-.heart-shape::before,
-.heart-shape::after {
-  content: "";
-  position: absolute;
-  width: 300px;
-  height: 270px;
-  background: black;
-  border-radius: 50%;
-}
-
-.heart-shape::before {
-  top: -150px;
-  left: 0;
-}
-
-.heart-shape::after {
-  left: 150px;
+.heart-overlay {
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  z-index: 2000;
+  overflow-y: auto;
 }
 
-.heart-text {
-  transform: rotate(45deg);
+.heart-close-button {
   position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -35%) rotate(45deg);
+  top: 20px;
+  right: 30px;
+  padding: 10px;
+  font-size: 2rem;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2001;
+}
+
+.heart-message-box {
+  max-width: 600px;
+  width: 100%;
+  background-color: #000;
   color: white;
-  width: 80%;
-  font-size: 0.9rem;
-  line-height: 1.4;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+  text-align: center;
 }
 
-.heart-text h1 {
-  font-size: 1.5rem;
+.heart-message-box h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.heart-message-box p {
   margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-.heart-text footer {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.8) rotate(-45deg); }
-  to { opacity: 1; transform: scale(1) rotate(-45deg); }
+.heart-message-box footer {
+  font-size: 2rem;
+  margin-top: 1.5rem;
 }
