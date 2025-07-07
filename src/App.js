@@ -40,7 +40,7 @@ function App() {
           </p>
           <Imagenes />
               <div style={{marginTop: '2rem'}}>
-                  <HeartMessae/>
+                  <HeartMessage/>
               </div>
         </div>
       </div>
