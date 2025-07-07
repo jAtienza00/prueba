@@ -3,6 +3,7 @@ import TreeCanvas from './components/TreeCanvas';
 import Contador from './components/Contador';
 import Notification from './components/Notifications';
 import Imagenes from './components/Imagenes';
+import HeartMessage from './components/Frases';
 
 function App() {
   const color = colorBackground();
@@ -38,6 +39,9 @@ function App() {
             Avril nos amamos desde hace <Contador />
           </p>
           <Imagenes />
+              <div style={{marginTop: '2rem'}}>
+                  <HeartMessague/>
+              </div>
         </div>
       </div>
     </div>
