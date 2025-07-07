@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import './HeartMessage.css';
 
-const HeartMessage: React.FC = () => {
-  const [showMessage, setShowMessage] = useState(false);
+const HeartMessage = () => {
+  const [showOverlay, setShowOverlay] = useState(false);
 
   return (
-    <div className="heart-container">
-      {!showMessage ? (
-        <button className="heart-button" onClick={() => setShowMessage(true)}>
-          Te amo tanto que 🌹
-        </button>
-      ) : (
-        <div className="heart-shape">
-          <div className="heart-text">
+    <>
+      <button className="heart-open-button" onClick={() => setShowOverlay(true)}>
+        Te amo tanto que 🌹
+      </button>
+
+      {showOverlay && (
+        <div className="heart-overlay">
+          <button className="heart-close-button" onClick={() => setShowOverlay(false)}>
+            &times;
+          </button>
+          <div className="heart-message-box">
             <h1>Una vez más...</h1>
             <p>Tendría un sueño contigo solo para pensarte una vez más,</p>
             <p>Tendría tu voz en bucle solo para escucharte una vez más,</p>
@@ -26,7 +29,7 @@ const HeartMessage: React.FC = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
