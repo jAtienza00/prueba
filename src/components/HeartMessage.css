@@ -1,0 +1,83 @@
+.heart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+.heart-button {
+  background: white;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #fff;
+  transition: transform 0.3s ease;
+}
+
+.heart-button:hover {
+  transform: scale(1.05);
+}
+
+.heart-shape {
+  position: relative;
+  width: 300px;
+  height: 270px;
+  background: black;
+  transform: rotate(-45deg);
+  margin: 2rem auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.heart-shape::before,
+.heart-shape::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 270px;
+  background: black;
+  border-radius: 50%;
+}
+
+.heart-shape::before {
+  top: -150px;
+  left: 0;
+}
+
+.heart-shape::after {
+  left: 150px;
+  top: 0;
+}
+
+.heart-text {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%) rotate(45deg);
+  color: white;
+  width: 80%;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.heart-text h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.heart-text footer {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8) rotate(-45deg); }
+  to { opacity: 1; transform: scale(1) rotate(-45deg); }
+}
