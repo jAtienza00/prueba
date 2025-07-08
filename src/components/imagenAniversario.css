@@ -1,11 +1,31 @@
-.draw {
+.draw path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dibujar 3s ease forwards;
+  animation: drawLine 6s linear forwards;
 }
 
-@keyframes dibujar {
+@keyframes drawLine {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+@keyframes latido {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
+
+.latido text {
+  animation: latido 1.5s infinite ease-in-out;
+  transform-origin: center;
 }
