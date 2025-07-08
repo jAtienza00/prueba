@@ -3,7 +3,7 @@ import './imagenAniversario.css';
 
 const ImagenAniversario = () => {
   return (
-    <div style={{ width: '100%'} className="flex justify-center aling-center">
+    <div style={{ width: '100%'}} className="flex justify-center aling-center">
       <svg
         viewBox="0 0 250 200"
         width="250"
