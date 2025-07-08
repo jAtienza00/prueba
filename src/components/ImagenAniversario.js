@@ -23,19 +23,19 @@ const ImagenAniversario = () => {
         />
 
         {/* Mini corazones con animación de latido */}
-        <g fontSize="10" className="latido">
-          <text x="105" y="100">❤️</text>
-          <text x="120" y="80">❤️</text>
-          <text x="135" y="70">❤️</text>
-          <text x="150" y="80">❤️</text>
-          <text x="165" y="100">❤️</text>
-          <text x="150" y="120">❤️</text>
-          <text x="135" y="135">❤️</text>
-          <text x="120" y="120">❤️</text>
-          <text x="135" y="100">❤️</text>
-          <text x="145" y="90">❤️</text>
-          <text x="125" y="110">❤️</text>
-          <text x="155" y="110">❤️</text>
+        <g fontSize="10">
+          <text x="105" y="100" className="latido">❤️</text>
+          <text x="120" y="80" className="latido">❤️</text>
+          <text x="135" y="70" className="latido">❤️</text>
+          <text x="150" y="80" className="latido">❤️</text>
+          <text x="165" y="100" className="latido">❤️</text>
+          <text x="150" y="120" className="latido">❤️</text>
+          <text x="135" y="135" className="latido">❤️</text>
+          <text x="120" y="120" className="latido">❤️</text>
+          <text x="135" y="100" className="latido">❤️</text>
+          <text x="145" y="90" className="latido">❤️</text>
+          <text x="125" y="110" className="latido" >❤️</text>
+          <text x="155" y="110" className="latido">❤️</text>
         </g>
 
         {/* Muñeco más a la izquierda */}
@@ -53,7 +53,7 @@ const ImagenAniversario = () => {
         </g>
 
         {/* Texto más arriba y más grande, sin negrita */}
-        <text x="45" y="130" fontSize="14" fill="white">para ti</text>
+        <text x="45" y="130" fontSize="12" fill="white">para ti</text>
       </svg>
     </div>
   );
