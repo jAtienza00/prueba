@@ -4,9 +4,12 @@ import Contador from './components/Contador';
 import Notification from './components/Notifications';
 import Imagenes from './components/Imagenes';
 import HeartMessage from './components/Frases';
+import ImagenAniversario from './components/ImagenAniversario';
 
 function App() {
   const color = colorBackground();
+  const mostrarAniversario = esAniversario();
+
   return (
     <div
       style={{
@@ -25,7 +28,12 @@ function App() {
     >
       <Notification/>
       <div style={{ width: '100%', maxWidth: 1000 }}>
-        <TreeCanvas />
+        {mostrarAniversario ? (
+          <ImagenAniversario />
+        ) : (
+          <TreeCanvas />
+        )}
+
         <div
           style={{
             width: '100%',
@@ -39,7 +47,7 @@ function App() {
             Avril nos amamos desde hace <Contador />
           </p>
           <Imagenes />
-                  <HeartMessage/>
+          <HeartMessage/>
         </div>
       </div>
     </div>
@@ -52,15 +60,28 @@ function colorBackground() {
 
   if (hora >= 23) {
     return '#000000';
-  }else if (hora >= 18) {
+  } else if (hora >= 18) {
     return '#e36b00';
-  }else if (hora >= 12) {
+  } else if (hora >= 12) {
     return '#00b2ff';
-  }else if (hora >= 6) {
+  } else if (hora >= 6) {
     return '#0049b9';
-  } else{
+  } else {
     return '#000000';
   }
+}
+
+// Mostrar ImagenAniversario si hoy es día 15 de cualquier mes
+function esAniversario() {
+  const hoy = new Date();
+  const dia = hoy.getDate();
+
+  if (dia === 15) {
+    console.log("Siiii es 15 ❤️");
+    return true;
+  }
+
+  return false;
 }
 
 export default App;
