@@ -1,0 +1,23 @@
+.imagen-aniversario {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.dibujo-animado path,
+.dibujo-animado line,
+.dibujo-animado circle,
+.dibujo-animado text,
+.dibujo-animado polyline,
+.dibujo-animado polygon {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: dibujar 3s ease forwards;
+}
+
+@keyframes dibujar {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
