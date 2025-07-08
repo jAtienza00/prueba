@@ -1,7 +1,10 @@
-.draw path {
+/* ANIMACIÓN DE DIBUJO (líneas, círculos, paths) */
+.draw path,
+.draw line,
+.draw circle {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: drawLine 6s linear forwards;
+  animation: drawLine 6s ease forwards;
 }
 
 @keyframes drawLine {
@@ -10,18 +13,32 @@
   }
 }
 
+/* ANIMACIÓN DE TEXTO: APARICIÓN SUAVE */
+.text-draw {
+  opacity: 0;
+  animation: fadeIn 3s ease-in forwards;
+  animation-delay: 4s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* LATIDO DE MINI CORAZONES */
 @keyframes latido {
   0%, 100% {
-    transform: scale(0.98);
+    transform: scale(1);
   }
   25% {
-    transform: scale(0.95);
+    transform: scale(1.2);
   }
   50% {
-    transform: scale(0.98);
+    transform: scale(0.95);
   }
   75% {
-    transform: scale(0.95);
+    transform: scale(1.1);
   }
 }
 
