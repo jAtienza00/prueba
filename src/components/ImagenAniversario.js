@@ -39,7 +39,7 @@ const ImagenAniversario = () => {
         </g>
 
         {/* Muñeco más a la izquierda */}
-        <g stroke="white" strokeWidth="2">
+        <g stroke="white" strokeWidth="2" className="draw">
           <circle cx="30" cy="150" r="5" fill="white" />
           <line x1="30" y1="155" x2="30" y2="170" />
           <line x1="30" y1="160" x2="20" y2="150" />
@@ -53,7 +53,7 @@ const ImagenAniversario = () => {
         </g>
 
         {/* Texto más arriba y más grande, sin negrita */}
-        <text x="10" y="100" fontSize="12" fill="white">para ti</text>
+        <text x="10" y="100" fontSize="12" fill="white" className="draw">para ti</text>
       </svg>
     </div>
   );
