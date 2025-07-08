@@ -5,8 +5,8 @@ const ImagenAniversario = () => {
   return (
     <div style={{ width: '100%', textAlign: 'center' }}>
       <svg
-        viewBox="0 0 220 200"
-        width="220"
+        viewBox="0 0 250 200"
+        width="250"
         height="200"
         xmlns="http://www.w3.org/2000/svg"
         className="draw"
@@ -14,43 +14,46 @@ const ImagenAniversario = () => {
         stroke="white"
         strokeWidth="1.5"
       >
-        {/* Corazón grande */}
+        {/* Corazón grande movido a la izquierda */}
         <path
-          d="M110 170 C30 100, 40 30, 110 60 C180 30, 190 100, 110 170 Z"
+          d="M100 170 C20 100, 30 30, 100 60 C170 30, 180 100, 100 170 Z"
           fill="none"
           stroke="white"
           strokeWidth="2"
         />
 
-        {/* Mini corazones distribuidos */}
+        {/* Mini corazones adicionales */}
         <g fontSize="10">
-          <text x="80" y="100">❤️</text>
-          <text x="95" y="80">❤️</text>
-          <text x="110" y="70">❤️</text>
-          <text x="125" y="80">❤️</text>
-          <text x="140" y="100">❤️</text>
-          <text x="125" y="120">❤️</text>
-          <text x="110" y="135">❤️</text>
-          <text x="95" y="120">❤️</text>
-          <text x="110" y="100">❤️</text>
+          <text x="70" y="100">❤️</text>
+          <text x="85" y="80">❤️</text>
+          <text x="100" y="70">❤️</text>
+          <text x="115" y="80">❤️</text>
+          <text x="130" y="100">❤️</text>
+          <text x="115" y="120">❤️</text>
+          <text x="100" y="135">❤️</text>
+          <text x="85" y="120">❤️</text>
+          <text x="100" y="100">❤️</text>
+          <text x="110" y="90">❤️</text>
+          <text x="90" y="110">❤️</text>
+          <text x="120" y="110">❤️</text>
         </g>
 
-        {/* Muñeco más a la izquierda */}
+        {/* Muñeco aún más a la izquierda */}
         <g stroke="white" strokeWidth="2">
-          <circle cx="30" cy="150" r="5" fill="white" />
-          <line x1="30" y1="155" x2="30" y2="170" />
-          <line x1="30" y1="160" x2="20" y2="150" />
-          <line x1="30" y1="160" x2="40" y2="150" />
-          <line x1="30" y1="170" x2="25" y2="180" />
-          <line x1="30" y1="170" x2="35" y2="180" />
+          <circle cx="20" cy="150" r="5" fill="white" />
+          <line x1="20" y1="155" x2="20" y2="170" />
+          <line x1="20" y1="160" x2="10" y2="150" />
+          <line x1="20" y1="160" x2="30" y2="150" />
+          <line x1="20" y1="170" x2="15" y2="180" />
+          <line x1="20" y1="170" x2="25" y2="180" />
 
           {/* Alas */}
-          <path d="M20 150 Q10 145, 15 155" fill="none" />
-          <path d="M40 150 Q50 145, 45 155" fill="none" />
+          <path d="M10 150 Q0 145, 5 155" fill="none" />
+          <path d="M30 150 Q40 145, 35 155" fill="none" />
         </g>
 
-        {/* Texto más grande y separado */}
-        <text x="45" y="145" fontSize="10" fill="white" fontWeight="bold">para ti</text>
+        {/* Texto más grande y más arriba, sin negrita */}
+        <text x="35" y="135" fontSize="12" fill="white">para ti</text>
       </svg>
     </div>
   );
