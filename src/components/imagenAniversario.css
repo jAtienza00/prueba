@@ -12,7 +12,7 @@
 
 @keyframes latido {
   0%, 100% {
-    transform: scale(1);
+    transform: scale(0.98);
   }
   25% {
     transform: scale(0.95);
