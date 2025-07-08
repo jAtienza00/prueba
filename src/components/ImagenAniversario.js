@@ -53,7 +53,7 @@ const ImagenAniversario = () => {
         </g>
 
         {/* Texto más arriba y más grande, sin negrita */}
-        <text x="10" y="150" fontSize="12" fill="white">para ti</text>
+        <text x="10" y="170 " fontSize="12" fill="white">para ti</text>
       </svg>
     </div>
   );
