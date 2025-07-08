@@ -17,7 +17,7 @@
 .text-draw {
   opacity: 0;
   animation: fadeIn 3s ease-in forwards;
-  animation-delay: 4s;
+  animation-delay: 2s;
 }
 
 @keyframes fadeIn {
