@@ -46,3 +46,24 @@
   animation: latido 2s infinite ease-in-out;
   transform-origin: center;
 }
+
+/* ANIMACIÓN DE LATIDO PARA EL CORAZÓN GRANDE */
+.latido-corazon {
+  animation: latidoCorazon 2.5s infinite ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes latidoCorazon {
+  0%, 100% {
+    transform: scale(0.95);
+  }
+  25% {
+    transform: scale(0.98);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(0.98);
+  }
+}
