@@ -25,7 +25,7 @@
   }
 }
 
-.latido text {
+.latido {
   animation: latido 1.5s infinite ease-in-out;
   transform-origin: center;
 }
