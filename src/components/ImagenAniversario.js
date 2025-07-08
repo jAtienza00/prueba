@@ -1,5 +1,5 @@
 import React from 'react';
-import './ImagenAniversario.css'; // Para la animación
+import './imagenAniversario.css'; // Para la animación
 
 const ImagenAniversario = () => {
   return (
