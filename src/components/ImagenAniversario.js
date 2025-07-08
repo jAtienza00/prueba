@@ -18,7 +18,7 @@ const ImagenAniversario = () => {
         <path
           d="M120 170 C40 100, 50 30, 120 60 C190 30, 200 100, 120 170 Z"
           strokeWidth="2"
-            className="latido"
+            className="latido-corazon"
         />
 
         {/* Mini corazones con latido */}
