@@ -73,7 +73,7 @@ function colorBackground() {
 
 // Mostrar ImagenAniversario si hoy es día 15 de cualquier mes
 function esAniversario() {
-  const hoy = new Date();
+  const hoy = new Date(2025, 7 , 15);
   const dia = hoy.getDate();
 
   if (dia === 15) {
