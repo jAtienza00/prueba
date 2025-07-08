@@ -29,20 +29,20 @@
 /* LATIDO DE MINI CORAZONES */
 @keyframes latido {
   0%, 100% {
-    transform: scale(1);
+    transform: scale(0.98);
   }
   25% {
-    transform: scale(1.2);
-  }
-  50% {
     transform: scale(0.95);
   }
+  50% {
+    transform: scale(0.98);
+  }
   75% {
-    transform: scale(1.1);
+    transform: scale(0.95);
   }
 }
 
 .latido {
-  animation: latido 1.5s infinite ease-in-out;
+  animation: latido 2s infinite ease-in-out;
   transform-origin: center;
 }
