@@ -32,8 +32,26 @@ const messages = [
       'Te amo, podría seguir escribiendo, expresando lo que me haces sentir, pero tardaría no solo una vida sino el universo entero.',
       'Te amo Avril.'
     ],
+    
     footer: '🌹'
-  }
+  },
+  {
+  title: "Oscuridad y Amor",
+  text: [
+    "En el más oscuro universo, donde la luz se ha rendido, solo el eco del vacío sabe cuánto te pienso.",
+    "En la más oscura galaxia, sin estrellas que me guíen, tu recuerdo es la chispa que incendia mi mente fría.",
+    "En el más oscuro planeta, donde la vida no crece, mi amor florece en la nada, aunque todo lo niegue.",
+    "En el más oscuro océano, sin orilla, sin consuelo, tu nombre es la ola eterna que me arrastra sin miedo.",
+    "En la más oscura noche, donde el tiempo se detiene, mi corazón aún susurra el deseo que no muere.",
+    "En la más oscura vida, cuando todo se derrumba, tú eres la voz que en silencio mi alma aún busca.",
+    "En lo más oscuro del alma, donde duelen los secretos, te llevo como un suspiro que no conoce el tiempo.",
+    "En el más oscuro corazón, quebrado y lleno de sombras, late aún la esperanza de que tú lo nombraras.",
+    "En mi más oscuro pensamiento, cuando todo me abandona, tu imagen brilla en mi mente como luna entre las olas.",
+    "Solo te quiero a ti, sea donde sea, como sea, por lo que sea. Te quiero a ti.",
+    
+  ],
+    footer:"🩷"
+}
 ];
 
 const HeartMessage = () => {
