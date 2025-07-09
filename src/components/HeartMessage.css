@@ -69,3 +69,48 @@
   font-size: 2rem;
   margin-top: 1.5rem;
 }
+
+.heart-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+
+.heart-arrow {
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.heart-arrow:hover {
+  transform: scale(1.2);
+}
+
+.heart-arrow.left {
+  position: absolute;
+  left: -50px;
+}
+
+.heart-arrow.right {
+  position: absolute;
+  right: -50px;
+}
+
+@media (max-width: 768px) {
+  .heart-carousel {
+    flex-direction: column;
+  }
+
+  .heart-arrow.left,
+  .heart-arrow.right {
+    position: static;
+  }
+}
