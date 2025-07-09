@@ -52,6 +52,7 @@
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(255,255,255,0.1);
   text-align: center;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .heart-message-box h1 {
@@ -78,6 +79,7 @@
   width: 100%;
   max-width: 800px;
   position: relative;
+  padding: 0 2rem; /* para que las flechas no queden fuera en móviles */
 }
 
 .heart-arrow {
@@ -88,6 +90,7 @@
   cursor: pointer;
   padding: 1rem;
   transition: transform 0.2s ease;
+  z-index: 2001;
 }
 
 .heart-arrow:hover {
@@ -96,21 +99,23 @@
 
 .heart-arrow.left {
   position: absolute;
-  left: -50px;
+  left: 0;
 }
 
 .heart-arrow.right {
   position: absolute;
-  right: -50px;
+  right: 0;
 }
 
 @media (max-width: 768px) {
   .heart-carousel {
     flex-direction: column;
+    padding: 0 1rem;
   }
 
   .heart-arrow.left,
   .heart-arrow.right {
     position: static;
+    margin-top: 1rem;
   }
 }
