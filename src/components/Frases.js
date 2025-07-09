@@ -16,19 +16,18 @@ const messages = [
     ]
   },
   {
-    title: 'Cada latido...',
+    title: 'Aunque todo acabe…',
     content: [
-      'Cada latido es un eco de tu nombre,',
-      'Cada respiro te recuerda,',
-      'Cada instante que pasa solo te llama más fuerte.'
-    ]
-  },
-  {
-    title: 'Lo que eres para mí',
-    content: [
-      'Eres mi canción favorita,',
-      'Mi calma en la tormenta,',
-      'Mi siempre en este mundo de “tal vez”.'
+      'Si todo lo nuestro acaba, mi mundo acabará. Podrías ser una simple compañera, pero cada día me aseguro más de que eres ella, la compañera que nunca se irá.',
+      'Aunque todo acabe o bien o mal, siempre te querré, me has dejado huella y pocas personas pueden decir eso, las podría contar con los dedos de mis manos, y si tengo en cuenta desde lo poco que nos conocemos es un logro.',
+      'La última persona que consiguió eso tardó más de 6 meses, así que enhorabuena.',
+      'Si algún día lo nuestro se acaba espero que no estés triste porque es lo que menos quiero en el mundo, daría mi vida, mi alma por ti.',
+      'Puede que haya nacido para ser un romántico, pero fuiste tú la que me hiciste así, yo era un alma en pena buscando el final de su castigo y tú fuiste el ángel enviado por Dios para mostrarme que solo necesito amar.',
+      'Aunque todo acabe, aunque cada uno siga su camino tú fuiste la que me enseñaste lo que es el amor de verdad.',
+      'No sé si serás la persona que estará junto a mí por el resto de mi vida y tú tampoco sabrás si yo soy esa persona, pero a todo le pido ser esa persona y que tú seas la mía, y eso que no creo en nada, pero por ti renuncio a todo.',
+      'Aunque todo se acabe espero que encuentres a alguien que te mire como la perfección que eres para mí.',
+      'Te amo, podría seguir escribiendo, expresando lo que me haces sentir, pero tardaría no solo una vida sino el universo entero.',
+      'Te amo Avril.'
     ]
   }
 ];
