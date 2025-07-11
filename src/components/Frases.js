@@ -51,6 +51,19 @@ const messages = [
     
   ],
     footer:"🩷"
+},
+  {
+  "title": "Por Ti, Todo Se Mueve",
+  "text": [
+    "Movería mi cuerpo, al ritmo de tu voz en el silencio, bailando en la brisa que dejas al pasar, como si el aire supiera tu nombre.",
+    "Movería mi corazón, latido tras latido, hasta desbordar mares enteros solo para llegar a ti en una ola de fuego.",
+    "Movería mi alma, rompiendo el tiempo y sus cadenas, para encontrarte en cada rincón del cielo donde aún no has mirado.",
+    "Movería mi gente, a unirse en un canto sin miedo, porque en tu risa cabe la esperanza de todos los que sueñan despiertos.",
+    "Movería el mundo, con las manos desnudas de dudas, si eso bastara para que entiendas que todo en mí gira hacia tu luz.",
+    "Movería el universo, como un dios sin trono pero con causa, reordenando estrellas, caminos y azares solo para volver a verte.",
+    "… Por ti, que no lo sabes, pero lo haces posible todo."
+  ],
+  "footer": "💫"
 }
 ];
 
