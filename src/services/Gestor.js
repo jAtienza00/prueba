@@ -3,6 +3,25 @@ import fotos from './fotos.json';
 import textos from './textos.json';
 
 
+export function incrementarAbrazos() {
+  let abrazo = 0;
+  if (localStorage.getItem("abrazos") != null) {
+    abrazo = Number(localStorage.getItem("abrazos"));
+  }
+  abrazo++;  // Incrementar antes de guardar
+  localStorage.setItem("abrazos", abrazo);
+  return abrazo; // Devuelve el nuevo valor
+}
+
+export function esBeso() {
+  let abrazo = 0;
+  if (localStorage.getItem("abrazos") != null) {
+    abrazo = Number(localStorage.getItem("abrazos"));
+  }
+  return abrazo > 0 && abrazo % 10 === 0;
+}
+
+
 export function Frases(){
     const randomIndex = Math.floor(Math.random() * frases.frasesDeAmor.length);
     return frases.frasesDeAmor[randomIndex];

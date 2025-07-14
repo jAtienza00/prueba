@@ -5,10 +5,12 @@ import Notification from './components/Notifications';
 import Imagenes from './components/Imagenes';
 import HeartMessage from './components/Frases';
 import ImagenAniversario from './components/ImagenAniversario';
+import FireworksCanvas from './components/Fuegos';
+import AbrazameButton from './components/Abrazame';
 
 function App() {
   const color = colorBackground();
-  const mostrarAniversario = esAniversario();
+  const isSpecialDay = new Date().getDate() === 15;
 
   return (
     <div
@@ -26,9 +28,10 @@ function App() {
         boxSizing: 'border-box',
       }}
     >
+      {isSpecialDay && <FireworksCanvas />}
       <Notification/>
       <div style={{ width: '100%', maxWidth: 1000 }}>
-        {mostrarAniversario ? (
+        {isSpecialDay ? (
           <ImagenAniversario />
         ) : (
           <TreeCanvas />
@@ -49,6 +52,7 @@ function App() {
           <div className='space-x-4'>
             <Imagenes />
             <HeartMessage/>
+            <AbrazameButton/>
           </div>
         </div>
       </div>
@@ -71,19 +75,6 @@ function colorBackground() {
   } else {
     return '#000000';
   }
-}
-
-// Mostrar ImagenAniversario si hoy es día 15 de cualquier mes
-function esAniversario() {
-  const hoy = new Date();
-  const dia = hoy.getDate();
-
-  if (dia === 15) {
-    console.log("Siiii es 15 ❤️");
-    return true;
-  }
-
-  return false;
 }
 
 export default App;
