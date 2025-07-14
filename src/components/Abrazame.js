@@ -28,9 +28,16 @@ const AbrazameButton = () => {
 
     if (nuevoContador % 10 === 0) {
       vibrarVisualmente();
+      if (navigator.vibrate) {
+        navigator.vibrate(200);
+      }
       setMensaje('Esto cuenta por un beso...');
       setTimeout(() => setMensaje('Abrázame...'), 3000);
     } else {
+        
+        if (navigator.vibrate) {
+            navigator.vibrate([300, 100, 300]);
+          }
       vibrarVisualmente();
     }
   };
