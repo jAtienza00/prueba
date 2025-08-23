@@ -1,0 +1,59 @@
+.heart-open-button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: rgb(194, 0, 219);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.heart-open-button:hover {
+  transform: scale(1.05);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1400px; /* Ancho máximo para la galería */
+  margin-left: auto;
+  margin-right: auto;
+  /* lg (pantalla grande) y superior */
+  margin-top: 70%;
+}
+
+@media (max-width: 1257px) {
+    .gallery-grid {
+      margin-top: 200%;
+    }
+  }
+  @media (max-width: 1150px) {
+    .gallery-grid {
+      margin-top: 160%;
+    }
+  }
+
+/* md (pantalla mediana) */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    margin-top: 150%;
+  }
+}
+@media (max-width: 980px) {
+    .gallery-grid {
+      margin-top: 400%;
+    }
+  }
+
+/* sm (pantalla pequeña) */
+@media (max-width: 768px) {
+  .gallery-grid {
+    /* Este valor de 1000% es muy grande y puede sacar el contenido de la pantalla. Lo he puesto porque es lo que has pedido, pero quizás quieras ajustarlo a un valor como '20vh' o '100px'. */
+    margin-top: 1850%;
+  }
+}

@@ -1,0 +1,31 @@
+.btn-abrazo{
+    padding: 12px 24px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: rgb(194, 0, 219);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.btn-abrazo:hover{
+  transform: scale(1.05);
+}
+
+/* En tu CSS global o módulo */
+@keyframes vibrar {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-3px); }
+    40% { transform: translateX(3px); }
+    60% { transform: translateX(-3px); }
+    80% { transform: translateX(3px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .btn-vibrar {
+    animation: vibrar 0.4s ease;
+  }
+  
