@@ -20,7 +20,7 @@ export default function LineaComponent() {
         {" "}
         <button
           onClick={() => setVisible(true)}
-          className="px-6 py-3 text-2xl cursor-pointer text-white border-none rounded-lg mt-4 hover:scale-105 transition-transform duration-200"
+          className="px-6 py-3 text-2xl cursor-pointer text-white  mt-4 hover:scale-105 transition-transform duration-200"
         >
           {" "}
           🌌{" "}

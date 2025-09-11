@@ -10,6 +10,7 @@ import AbrazameButton from './components/Abrazame';
 import CartaComponent from './components/Carta';
 import JuegoPalabrasComponent from './components/JuegoPalabra';
 import LineaComponent from './components/Linea';
+import RevealComponent from './components/Reveal';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
     >
       <CartaComponent/>
       <LineaComponent/>
+      <RevealComponent/>
       {isSpecialDay && <FireworksCanvas />}
       <Notification/>
       <div style={{ width: '100%', maxWidth: 1000 }}>

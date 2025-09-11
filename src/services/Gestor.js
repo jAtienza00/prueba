@@ -3,6 +3,7 @@ import fotos from './fotos.json';
 import textos from './textos.json';
 import carta from './carta.json';
 import palabra from './palabra.json';
+import reveal from './Reveal.json';
 
 
 
@@ -62,6 +63,20 @@ export async function NASA() {
     console.error(error);
     return null;
   }
+}
+
+export function Reveal() {
+  const startDay = 12; // empieza mañana día 12
+  const today = new Date().getDate(); // día actual (número de mes)
+  
+  // índice = día - inicio (pero nunca menor a 0 ni mayor al total de imágenes -1)
+  let index = today - startDay;
+  if (index < 0) index = 0;
+  if (index >= reveal.images.length) index = reveal.images.length - 1;
+
+  return {
+    image: reveal.images[index]
+  };
 }
 /*
 example: 
