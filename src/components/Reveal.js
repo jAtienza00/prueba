@@ -69,7 +69,7 @@ export default function RevealComponent() {
   // Botón inicial
   if (!visible) {
     return (
-      <div className="fixed top-4 right-30 z-50">
+      <div className="fixed top-4 right-30 ">
         <button
           onClick={() => setVisible(true)}
           className="px-6 py-3 text-2xl mt-4 cursor-pointer text-white hover:scale-105 transition-transform duration-200"

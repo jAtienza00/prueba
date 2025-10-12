@@ -11,6 +11,7 @@ import CartaComponent from './components/Carta';
 import JuegoPalabrasComponent from './components/JuegoPalabra';
 import LineaComponent from './components/Linea';
 import RevealComponent from './components/Reveal';
+import SpotifyComponent from './components/Spotify';
 
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
           <p style={{ fontSize: 'clamp(1rem, 4vw, 1.5rem)' }}>
             Avril nos amamos desde hace <Contador />
           </p>
+          <SpotifyComponent />
           <Botones />
 
         </div>

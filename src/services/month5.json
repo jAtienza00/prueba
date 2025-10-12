@@ -1,0 +1,29 @@
+{
+  "mensajes": {
+    "1":{
+        "fecha": "2023-05-15",
+        "texto": "Esa noche el cielo brillaba igual que tus ojos 💫"
+    },"2":{
+        "fecha": "2023-05-04",
+        "texto": "Esa noche conectamos por primera vez."
+    },"3":{
+        "fecha": "2023-05-05",
+        "texto":"La primera vez que te recoji, te veias tan increible como esta foto."
+    },"4":{
+        "fecha": "2023-05-11",
+        "texto": "El dia que decidi que tenia que salir contigo..."
+    },"5":{
+        "fecha": "2023-06-15",
+        "texto": "La primera vez que celebramos nuestro aniversario."
+    },"6":{
+        "fecha": "2023-07-14",
+        "texto": "El dia que te hice ver las estrellas dos veces..."
+    }
+    
+  },
+  "miniMensajes": [
+    "Siempre serás mi constelación favorita 💖",
+    "Nuestro universo empezó ese día ✨",
+    "El cielo también se enamoró de ti 🌙"
+  ]
+}

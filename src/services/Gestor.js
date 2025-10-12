@@ -4,6 +4,7 @@ import textos from './textos.json';
 import carta from './carta.json';
 import palabra from './palabra.json';
 import reveal from './Reveal.json';
+import cielo from './month5.json';
 
 
 
@@ -50,20 +51,38 @@ export function Imagenes(){
 }
 //https://drive.usercontent.google.com/download?id=1TinKj7o5SzCGQ1N5fufDFxVHmwKSY8wE&export=view&authuser=0
 
-export async function NASA() {
+
+export async function NASA(date) {
   try {
     const response = await fetch(
-      "https://api.nasa.gov/planetary/apod?api_key=JRj6byZcaiMoYauoccn9Kg1JaNNeXDJ28GdIoCgN&date=2023-05-15"
+      `https://api.nasa.gov/planetary/apod?api_key=JRj6byZcaiMoYauoccn9Kg1JaNNeXDJ28GdIoCgN&date=${date}`
     );
     const data = await response.json();
-    const emojiEffects = ["🌍","🪐","⭐","🚀"]
-    const ret = {"hdurl": data.hdurl, "url": data.url, "title": data.title, "explanation": data.explanation, "emojiEffects": emojiEffects};
-    return ret;
+    const emojiEffects = ["🌍", "🪐", "⭐", "🚀"];
+    return {
+      hdurl: data.hdurl,
+      url: data.url,
+      title: data.title,
+      explanation: data.explanation,
+      emojiEffects
+    };
   } catch (error) {
     console.error(error);
     return null;
   }
 }
+
+export function Cielos() {
+  // Convertimos el objeto en array ordenado por fecha
+  const mensajes = Object.values(cielo.mensajes).sort(
+    (a, b) => new Date(a.fecha) - new Date(b.fecha)
+  );
+  return {
+    mensajes,
+    miniMensajes: cielo.miniMensajes
+  };
+}
+
 
 export function Reveal() {
   const startDay = 12; // empieza mañana día 12
