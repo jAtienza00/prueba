@@ -85,7 +85,7 @@ export function Cielos() {
 
 
 export function Reveal() {
-  const startDay = 12; // empieza mañana día 12
+  const startDay = 6;
   const today = new Date().getDate(); // día actual (número de mes)
   
   // índice = día - inicio (pero nunca menor a 0 ni mayor al total de imágenes -1)
