@@ -131,7 +131,7 @@ export async function Gatos() {
   export function CartasDelMes() {
     const now = new Date();
   
-    const startDate = new Date(2025, 10, 15);
+    const startDate = new Date(2025, 11, 15);
     let monthsPassed =
       (now.getFullYear() - startDate.getFullYear()) * 12 +
       (now.getMonth() - startDate.getMonth());
