@@ -5,6 +5,7 @@ import carta from './carta.json';
 import palabra from './palabra.json';
 import reveal from './Reveal.json';
 import cielo from './month5.json';
+import cartas from './cartasDelMes.json';
 
 
 
@@ -126,3 +127,25 @@ export async function Gatos() {
       return null;
     }
   }
+
+  export function CartasDelMes() {
+    const now = new Date();
+  
+    const startDate = new Date(2025, 10, 5);
+    let monthsPassed =
+      (now.getFullYear() - startDate.getFullYear()) * 12 +
+      (now.getMonth() - startDate.getMonth());
+  
+    if (now.getDate() >= 15) {
+      monthsPassed += 1;
+    }
+  
+    const updatedCards = cartas.cards.map((card, index) => ({
+      ...card,
+      unlocked: index <= monthsPassed,
+    }));
+  
+    console.log("✅ Cartas cargadas:", updatedCards);
+    return updatedCards;
+  }
+  
