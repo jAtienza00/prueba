@@ -12,6 +12,7 @@ import JuegoPalabrasComponent from './components/JuegoPalabra';
 import LineaComponent from './components/Linea';
 import RevealComponent from './components/Reveal';
 import SpotifyComponent from './components/Spotify';
+import CartasDelMesComponent from './components/CartasDelMes';
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
         boxSizing: 'border-box',
       }}
     >
-      <CartaComponent/>
+      {/*<CartaComponent/>*/}
       <LineaComponent/>
       <RevealComponent/>
       {isSpecialDay && <FireworksCanvas />}
@@ -77,6 +78,7 @@ function Botones() {
       <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col justify-center gap-4 lg:w-1/2">
         <Imagenes />
         <HeartMessage />
+        <CartasDelMesComponent />
       </div>
 
       {/* Segundo bloque: visible según verMas */}
