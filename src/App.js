@@ -35,7 +35,7 @@ function App() {
         boxSizing: 'border-box',
       }}
     >
-      {/*<CartaComponent/>*/}
+      <CartaComponent/>
       <LineaComponent/>
       <RevealComponent/>
       {isSpecialDay && <FireworksCanvas />}
