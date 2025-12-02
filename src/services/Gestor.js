@@ -6,6 +6,7 @@ import palabra from './palabra.json';
 import reveal from './Reveal.json';
 import cielo from './month5.json';
 import cartas from './cartasDelMes.json';
+import pixel from './pixel.json';
 
 
 
@@ -86,7 +87,7 @@ export function Cielos() {
 
 
 export function Reveal() {
-  const startDay = 6;
+  const startDay = 2;
   const today = new Date().getDate(); // día actual (número de mes)
   
   // índice = día - inicio (pero nunca menor a 0 ni mayor al total de imágenes -1)
@@ -147,5 +148,8 @@ export async function Gatos() {
   
     console.log("✅ Cartas cargadas:", updatedCards);
     return updatedCards;
-  }
-  
+}
+
+export function PixelData() {
+  return pixel;
+}
