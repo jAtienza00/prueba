@@ -41,7 +41,7 @@ function App() {
       <RevealComponent/>
       {isSpecialDay && <FireworksCanvas />}
       <Notification/>
-      {/*<PixelArtComponent/>*/}
+      <PixelArtComponent/>
       <div style={{ width: '100%', maxWidth: 1000 }}>
         {isSpecialDay ? (
           <ImagenAniversario />
