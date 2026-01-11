@@ -10,11 +10,7 @@ export default function JuegoPalabrasComponent() {
   const [visible, setVisible] = useState(false);
   const [trie, setTrie] = useState(5);
   const [isEnd, setIsEnd] = useState(false);
-
-  useEffect(() => {
-    reTry();
-  }, [visible]);
-
+  
   const reTry = () => {
     if (visible) {
       const randomItem = LikedThing();
@@ -26,6 +22,13 @@ export default function JuegoPalabrasComponent() {
       setIsEnd(false);
     }
   };
+
+  useEffect(() => {
+    reTry();
+    let correctas = localStorage.getItem("correctas") || 0;
+    localStorage.setItem("correctas", correctas);
+  }, [visible]);
+
 
   const handleGuess = () => {
     if (!current) return;
@@ -42,6 +45,8 @@ export default function JuegoPalabrasComponent() {
       if (newTries === 0) {
         setIsEnd(true);
       }
+    }else{
+      localStorage.setItem("correctas", parseInt(localStorage.getItem("correctas")) + 1);
     }
   };
 

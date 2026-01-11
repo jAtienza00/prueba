@@ -14,6 +14,7 @@ import RevealComponent from './components/Reveal';
 import SpotifyComponent from './components/Spotify';
 import CartasDelMesComponent from './components/CartasDelMes';
 import PixelArtComponent from './components/PixelArt';
+import Month8Component from './components/Month8';
 
 
 function App() {
@@ -39,9 +40,10 @@ function App() {
       <CartaComponent/>
       <LineaComponent/>
       <RevealComponent/>
+      <Month8Component/>
       {isSpecialDay && <FireworksCanvas />}
       <Notification/>
-      {/*<PixelArtComponent/>*/}
+      <PixelArtComponent/>
       <div style={{ width: '100%', maxWidth: 1000 }}>
         {isSpecialDay ? (
           <ImagenAniversario />
