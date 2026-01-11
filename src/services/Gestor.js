@@ -7,6 +7,7 @@ import reveal from './Reveal.json';
 import cielo from './month5.json';
 import cartas from './cartasDelMes.json';
 import pixel from './pixel.json';
+import month8 from './month8.json';
 
 
 
@@ -44,7 +45,7 @@ export function Carta(){
 
 export function LikedThing(){
   const randomIndex = Math.floor(Math.random() * palabra.length);
-    return palabra[randomIndex];
+  return palabra[randomIndex];
 }
 
 export function Imagenes(){
@@ -152,4 +153,12 @@ export async function Gatos() {
 
 export function PixelData() {
   return pixel;
+}
+
+export function Month8Data() {
+  let correctas = localStorage.getItem("correctas") || 0;
+  if (correctas >= 3) {
+    return month8;    
+  }
+  return {title: "Necesitas mas nivel", message: 'Necesitas acertar 3 palabras para poder jugar. Accede a "¿Jugamos?" en "Ver mas".',}
 }
