@@ -8,6 +8,7 @@ import cielo from './month5.json';
 import cartas from './cartasDelMes.json';
 import pixel from './pixel.json';
 import month8 from './month8.json';
+import month9 from './month9.json';
 
 
 
@@ -88,7 +89,7 @@ export function Cielos() {
 
 
 export function Reveal() {
-  const startDay = 1;
+  const startDay = 9;
   const today = new Date().getDate(); // día actual (número de mes)
   
   // índice = día - inicio (pero nunca menor a 0 ni mayor al total de imágenes -1)
@@ -161,4 +162,9 @@ export function Month8Data() {
     return month8;    
   }
   return {title: "Necesitas mas nivel", message: 'Necesitas acertar 3 palabras para poder jugar. Accede a "¿Jugamos?" en "Ver mas".',}
+}
+
+export function Month9Data() {
+  // Para el mes 9 no hay requisito de juego, se desbloquea por tiempo
+  return month9;
 }
