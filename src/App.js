@@ -11,7 +11,6 @@ import CartaComponent from './components/Carta';
 import JuegoPalabrasComponent from './components/JuegoPalabra';
 import LineaComponent from './components/Linea';
 import RevealComponent from './components/Reveal';
-import SpotifyComponent from './components/Spotify';
 import CartasDelMesComponent from './components/CartasDelMes';
 import PixelArtComponent from './components/PixelArt';
 import Month8Component from './components/Month8';
@@ -42,7 +41,7 @@ function App() {
       <LineaComponent/>
       <RevealComponent/>
       <Month8Component/>
-      {/*<Month9Component/>*/}
+      <Month9Component/>
       {isSpecialDay && <FireworksCanvas />}
       <Notification/>
       <PixelArtComponent/>
@@ -65,7 +64,6 @@ function App() {
           <p style={{ fontSize: 'clamp(1rem, 4vw, 1.5rem)' }}>
             Avril nos amamos desde hace <Contador />
           </p>
-          <SpotifyComponent />
           <Botones />
 
         </div>
