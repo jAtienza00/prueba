@@ -15,6 +15,7 @@ import CartasDelMesComponent from './components/CartasDelMes';
 import PixelArtComponent from './components/PixelArt';
 import Month8Component from './components/Month8';
 import Month9Component from './components/Month9';
+import Month10Component from './components/Month10';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       <RevealComponent/>
       <Month8Component/>
       <Month9Component/>
+      <Month10Component/>
       {isSpecialDay && <FireworksCanvas />}
       <Notification/>
       <PixelArtComponent/>
