@@ -8,6 +8,7 @@ import cielo from './month5.json';
 import cartas from './cartasDelMes.json';
 import pixel from './pixel.json';
 import month8 from './month8.json';
+import month10 from './month10.json';
 import month9 from './month9.json';
 
 
@@ -167,4 +168,8 @@ export function Month8Data() {
 export function Month9Data() {
   // Para el mes 9 no hay requisito de juego, se desbloquea por tiempo
   return month9;
+}
+
+export function Month10Data() {
+  return month10;
 }
