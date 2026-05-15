@@ -10,6 +10,8 @@ import pixel from './pixel.json';
 import month8 from './month8.json';
 import month10 from './month10.json';
 import month9 from './month9.json';
+import month11 from './month11.json';
+import month12 from './month12.json';
 
 
 
@@ -172,4 +174,12 @@ export function Month9Data() {
 
 export function Month10Data() {
   return month10;
+}
+
+export function Month11Data() {
+  return month11;
+}
+
+export function Month12Data() {
+  return month12;
 }
