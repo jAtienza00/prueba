@@ -1,0 +1,50 @@
+{
+  "mensajes": {
+    "1":{
+        "fecha": "2025-05-15",
+        "texto": "Esa noche el cielo brillaba igual que tus ojos 💫"
+    },"2":{
+        "fecha": "2025-05-04",
+        "texto": "Esa noche conectamos por primera vez."
+    },"3":{
+        "fecha": "2025-05-05",
+        "texto":"La primera vez que te recoji, te veias tan increible como esta foto."
+    },"4":{
+        "fecha": "2025-05-11",
+        "texto": "El dia que decidi que tenia que salir contigo..."
+    },"5":{
+        "fecha": "2025-06-15",
+        "texto": "La primera vez que celebramos nuestro aniversario."
+    },"6":{
+        "fecha": "2025-07-14",
+        "texto": "El dia que te hice ver las estrellas dos veces..."
+    },"7":{
+        "fecha": "2025-08-05",
+        "texto": "El dia que viste las estrellas (te abriste la cabeza)..."
+    },"8":{
+        "fecha": "2025-09-14",
+        "texto": "La primera vez en shushiMOOD 🍣"
+    },"9":{
+        "fecha": "2025-09-17",
+        "texto": "La primera vez que estuvimos un finde en mi casa solos"
+    },"10":{
+        "fecha": "2025-11-18",
+        "texto": "Nuestro aniversario mas largo(hotel sexual)"
+    },"11":{
+        "fecha": "2026-01-04",
+        "texto": "La vez que fuimos a comer con mis padres a nuestro restaurante"
+    },"12":{
+        "fecha": "2026-02-08",
+        "texto": "Cuando recuperaste a tus gatas "
+    },"13":{
+        "fecha": "2026-02-14",
+        "texto": "Nuestro primer san valentin juntos"
+    }
+    
+  },
+  "miniMensajes": [
+    "Siempre serás mi constelación favorita 💖",
+    "Nuestro universo empezó ese día ✨",
+    "El cielo también se enamoró de ti 🌙"
+  ]
+}
