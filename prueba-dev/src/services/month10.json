@@ -1,0 +1,34 @@
+{
+  "title": "Nuestro Futuro Juntos",
+  "introduction": "Hola mi amor, este mes quiero que imaginemos un poquito de nuestro futuro. Juega a este pequeño juego de decisiones y veamos qué nos depara el destino.",
+  "steps": [
+    {
+      "id": "house",
+      "question": "¿Dónde te imaginas que viviremos?",
+      "options": [
+        { "text": "1. Un piso acogedor en la ciudad 🏙️", "next": "travel", "storyPart": "Viviremos en un piso súper acogedor en medio de la ciudad, donde cada rincón tendrá algo nuestro." },
+        { "text": "2. Una casita con jardín a las afueras 🏡", "next": "travel", "storyPart": "Tendremos nuestra casita con jardín a las afueras, para que podamos desconectar y disfrutar de la tranquilidad juntos." },
+        { "text": "3. Una furgoneta camper recorriendo el mundo 🚐", "next": "travel", "storyPart": "Nuestra casa será una furgoneta camper, porque el mundo entero será nuestro patio trasero mientras viajamos juntos." }
+      ]
+    },
+    {
+      "id": "travel",
+      "question": "¿Cuál será nuestro primer gran viaje?",
+      "options": [
+        { "text": "1. Japón para ver los cerezos 🌸", "next": "pet", "storyPart": "Nuestro primer gran viaje será a Japón; caminaremos bajo los cerezos en flor de la mano." },
+        { "text": "2. Islandia para ver las auroras 🌌", "next": "pet", "storyPart": "Viajaremos a Islandia para ver las auroras boreales, abrazaditos mientras el cielo se llena de colores." },
+        { "text": "3. Una isla desierta para estar solos 🏝️", "next": "pet", "storyPart": "Nos iremos a una isla desierta, donde el tiempo se detendrá y solo importará que estemos los dos." }
+      ]
+    },
+    {
+      "id": "pet",
+      "question": "¿Qué mascota tendremos primero?",
+      "options": [
+        { "text": "1. Un perrito juguetón 🐶", "next": "final", "storyPart": "Y por supuesto, nuestra familia empezará con un perrito juguetón que no parará de darnos alegrías." },
+        { "text": "2. Un gatito mimoso 🐱", "next": "final", "storyPart": "Y para completar nuestro hogar, tendremos un gatito mimoso que se dormirá ronroneando sobre nosotros." },
+        { "text": "3. ¡Toda una granja! 🐮🐷", "next": "final", "storyPart": "¡Y acabaremos teniendo toda una granja! Rodeados de animales y de mucho, mucho amor." }
+      ]
+    }
+  ],
+  "finalMessage": "Sea lo que sea que elijamos, lo más importante es que estaremos juntos. No importa el lugar, ni los viajes, ni nada, mientras pueda despertar cada día a tu lado. Te amo Avril, por un futuro increíble contigo. ❤️"
+}
