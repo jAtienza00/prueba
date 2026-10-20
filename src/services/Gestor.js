@@ -2,6 +2,7 @@ import frases from './mensajes.json';
 import fotos from './fotos.json';
 import textos from './textos.json';
 import carta from './carta.json';
+import cumpleanos from './cumpleaños.json';
 import palabra from './palabra.json';
 import reveal from './Reveal.json';
 import cielo from './month5.json';
@@ -12,6 +13,7 @@ import month10 from './month10.json';
 import month9 from './month9.json';
 import month11 from './month11.json';
 import month12 from './month12.json';
+import Cumple from './Cumple.json';
 
 
 
@@ -45,6 +47,10 @@ export function Textos(){
 
 export function Carta(){
   return carta;
+}
+
+export function CartaCumpleanos(){
+  return cumpleanos;
 }
 
 export function LikedThing(){
@@ -182,4 +188,8 @@ export function Month11Data() {
 
 export function Month12Data() {
   return month12;
+}
+
+export function CumpleData() {
+  return Cumple;
 }

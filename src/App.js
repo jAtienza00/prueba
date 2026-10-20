@@ -4,6 +4,7 @@ import Contador from './components/Contador';
 import Notification from './components/Notifications';
 import Imagenes from './components/Imagenes';
 import HeartMessage from './components/Frases';
+import CartaCumpleanosComponent from './components/CartaCumpleanos';
 import ImagenAniversario from './components/ImagenAniversario';
 import FireworksCanvas from './components/Fuegos';
 import AbrazameButton from './components/Abrazame';
@@ -18,6 +19,7 @@ import Month9Component from './components/Month9';
 import Month10Component from './components/Month10';
 import Month11Component from './components/Month11';
 import Month12Component from './components/Month12';
+import Month13Component from './components/Cumple';
 
 
 function App() {
@@ -48,6 +50,7 @@ function App() {
       <Month10Component/>
       <Month11Component/>
       <Month12Component/>
+      <Month13Component/>
       {isSpecialDay && <FireworksCanvas />}
       <Notification/>
       <PixelArtComponent/>
@@ -87,7 +90,7 @@ function Botones() {
       {/* Primer bloque visible siempre */}
       <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col justify-center gap-4 lg:w-1/2">
         <Imagenes />
-        <HeartMessage />
+        <CartaCumpleanosComponent />
         <CartasDelMesComponent />
       </div>
 
@@ -95,6 +98,7 @@ function Botones() {
       {verMas && (
         <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col justify-center gap-4 lg:w-1/2">
           <AbrazameButton />
+          <HeartMessage />
           <JuegoPalabrasComponent />
         </div>
       )}
